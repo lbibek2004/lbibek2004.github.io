@@ -114,6 +114,7 @@ nav ul li:hover ul.dropdown-list{
         padding: 13px 6px;
     }
 }
+/*
 @media (max-width:590px){
      #checkbtn{
         display: block;
@@ -135,4 +136,52 @@ nav ul li:hover ul.dropdown-list{
      nav ul li:hover ul.dropdown-list{
         display: inline-block;
      }
+}
+*/
+@media (max-width: 590px) {
+    #checkbtn {
+        display: block;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        background: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: -500%;
+        transition-duration: 0.5s;
+        z-index: 1001;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        position: relative
+    }
+
+    nav ul li ul.dropdown-list {
+        display: none;
+        position:sticky;
+        top: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1002;
+    }
+
+    nav ul li ul.dropdown-list.show {
+        display: block;
+    }
+
+    nav ul li:hover ul.dropdown-list {
+        display: block;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
 }
