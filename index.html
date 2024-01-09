@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/main-body.css">
         <script src="script/personal-web.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>
             Bibek Luitel
         </title>
@@ -21,19 +23,33 @@
                     <a href="./">
                         <img class="personal-logo" src="Website-Images/bibekluitel-logo-white-transparent.png">
                         <div class="tooltip">Home</div>
-                     </a> 
-                        
-
+                     </a>
                  </div>
             </div>
             <div class="right-part">
-                <button>Feedback</button>
-                <button>Projects</button>
-                <button>About Me</button>
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" id="checkbtn">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="feedback-personal-web.html" target="_blank">Feedback</a></li>
+                        <li>
+                        <a href="#">Languages &#9660;</a>
+                        <ul class="dropdown-list">
+                            <li><a href="html-personal-web.html">HTML</a></li>
+                            <li><a href="css-personal-web.html">CSS</a></li>
+                            <li><a href="javascript-personal-web.html">JavaScript</a></li>
+                        </ul>
+                        <li><a href="about-me-personal-web.html">About Me</a></li>
+                    </li>
+                </ul>
+            </nav>
                 <div class="exit-icon-container">
                     <img  class="exit-icon" src="Icons/log-out.png" alt="Exit" onclick="closeWindow()">
                     <div class="tooltip">Exit</div>
                 </div>
+        
             </div>
         </div>
         <div class="footer">
