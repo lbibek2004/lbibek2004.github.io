@@ -1,0 +1,9 @@
+.side-bar {
+    height: 1200px;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: yellow;
+    width: 72px;
+    padding-top: 50px;
+  }

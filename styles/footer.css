@@ -1,0 +1,109 @@
+.footer{
+  padding: 2px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #efefef;
+    margin-top: 640px;
+}
+.footer div{
+  text-align: center;
+}
+.footer div h3{
+  font-weight: 800;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.logos{
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    transition-duration: 0.2s;
+}
+.logos:hover{
+  transform: scale(1.3);
+}
+.column-2{
+  
+}
+.logos-container{
+    align-content: space-between;
+    display: grid;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+.my-contact{
+  text-align: left;
+  padding-left: 40px;
+  padding-bottom: 2px;
+  transition-duration: 0.2s;
+}
+.my-contact:hover{
+  font-size: 17px;
+}
+.column-3 a{
+  text-decoration: none;
+  color: #efefef;
+  transition-duration: 0.3s;
+}
+.column-3 a:hover{
+  text-decoration: none;
+  color: #efefef;
+  text-decoration: underline;
+  transform: scale(1.3);
+}
+form input{
+  width: 100%;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  outline: none;
+  border: none;
+}
+form button{
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  height: 40px;
+  width: 40%;
+  background-color: rgb(38, 209, 183);
+  color: rgb(0, 0, 0);
+  font-weight: 1000;
+  transition-duration: 0.2s;
+}
+form button:hover{
+  transform: scale(1.2);
+}
+@media (max-width: 700px) {
+     
+    .logos-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+@media (min-width: 701px) and (max-width: 1299px) {
+     
+    .logos-container {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+@media (min-width: 1300px) {
+     
+    .logos-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+  .copyright{
+    grid-column: 1 / span 3;
+    text-align: center;
+    font-weight: lighter;
+    opacity: 60%;
+  }
