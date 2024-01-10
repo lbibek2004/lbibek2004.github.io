@@ -83,21 +83,23 @@ form button:hover{
     column-gap: 8px;
 }
   .footer{
+      display: grid;
       padding: 1px;
-      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       background-color: black;
       padding-left: 10px;
       padding-right: 10px;
       margin-top: 680px;
   }
+  }
   .footer div h3{
-    font-weight: 600;
+    font-size: 14px;
     padding-bottom: 3px;
   }
   .logos{
     height: 30px;
     width: auto;
-    padding: 6px;
+    padding: 3px -2px;
 }
 .logos:hover{
   transform: scale(1.2);
@@ -114,10 +116,9 @@ form button{
   transition-duration: 0.2s;
 }
 .my-contact{
+  font-size: 10px;
   text-align: left;
   padding-left: 20px;
-}
-
 }
 @media (max-width: 700px) {
     .logos-container {
