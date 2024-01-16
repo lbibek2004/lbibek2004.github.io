@@ -24,7 +24,6 @@
     height: 100%;
     width: fit-content;
 }
-.exit-icon-container .tooltip,
 .personal-logo-container .tooltip{
     background-color: rgb(10, 10, 10);
     color:white;
@@ -36,7 +35,6 @@
     font-size: 12px;
     visibility: hidden;
 }
-.exit-icon-container:hover .tooltip,
 .personal-logo-container:hover .tooltip{
     visibility: visible;
     opacity: 40%;
@@ -46,19 +44,6 @@
 .personal-logo{
     height: 50px;
     width: auto;
-}
-.exit-icon{
-    height: 50px;
-    width: auto;
-}
-.exit-icon-container{
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.2s;
-}
-.exit-icon-container:hover{
-    cursor: pointer;
-    transform: scale(1.2);
 }
 nav ul {
     float: right;
