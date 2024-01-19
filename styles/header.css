@@ -45,6 +45,9 @@
     height: 50px;
     width: auto;
 }
+nav a.active{
+    color: rgb(18, 159, 235);
+}
 nav ul {
     float: right;
     list-style: none;
