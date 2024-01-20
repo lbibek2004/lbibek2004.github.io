@@ -31,7 +31,7 @@
   transition-duration: 0.2s;
 }
 .my-contact:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .column-3 a{
   text-decoration: none;
@@ -66,7 +66,7 @@ form button{
   transition-duration: 0.2s;
 }
 form button:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
   .footer div h3{
     font-size: 14px;
