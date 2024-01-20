@@ -100,9 +100,7 @@ nav ul li:hover ul.dropdown-list{
 #check:checked ~ ul {
     left: 0;
 }
-input{
-    display: none;
-}
+
 @media (max-width: 700px){
     nav ul li a {
         font-size: 18px;
