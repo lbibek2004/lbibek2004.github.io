@@ -75,9 +75,38 @@ align-items: center;
     -webkit-text-fill-color: transparent;
 }
 #languages{
-    height: 100vh;
+    height: 120vh;
+    padding-top: 50px;
 }
-
+.language-icon-background{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #060d4b;
+    justify-content: center;
+    text-align: center;
+}
+#languages-icon{
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+}
+#languages p{
+    color: white;
+    font-size: 14px;
+    background-color: #0F172A;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+#html ,
+#css ,
+#javascript{
+    padding-top: 50px;
+    display: flex;
+    padding: 8.5vh 5vw;
+}
 @media (max-width: 500px){
     #greetings{
         margin-top: 50px;
@@ -119,4 +148,5 @@ align-items: center;
 #feedback-form-textarea{
     color: white;
     background-color: #0c0e24;
+    border-radius: 5px;
 }
