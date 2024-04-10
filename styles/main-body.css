@@ -1,0 +1,122 @@
+.content-container,
+#feedback-form-elements h2{
+    font-family: 'Inknut Antiqua', 'Times New Roman', Times, serif;
+}
+#feedback-form-elements h2{
+    color: beige;
+}
+.inknut-antiqua-light {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+#my-details{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+}
+#intro-container{
+    padding: 10% 0px 0px 0px;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 125%;
+}
+#my-name{
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#my-image{
+    margin-top: 65px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-blend-mode:difference;
+}
+.phone,
+.mail {
+ display: flex;
+align-items: center;
+}
+.personal-info-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.personal-info-container .font-gradient,
+.phone p,
+.mail p{
+    font-size: large;
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+    margin: 6px 0px;
+}
+.mail a,
+.phone a{
+    text-decoration: none;
+}
+#about-me-logos{
+    color: white;
+    font-size: 35px;
+    padding: 10px 3px;
+    transition-duration: 0.2s;
+    margin-right: 10px;
+}
+.name-container h2 {
+    font-size: 30px;
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#languages{
+    height: 100vh;
+}
+
+@media (max-width: 500px){
+    #greetings{
+        margin-top: 50px;
+    }
+    #intro-container {
+        font-size: 80%;
+    }
+}
+@media (min-width: 501px) and (max-width: 1000px){
+    #greetings,
+    #my-image{
+        margin-top: 30vh;
+    }
+    #intro-container{
+        font-size:  110%
+    }
+}
+
+/* Feedback styles */
+
+
+#feedback-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#feedback-form-elements h2{
+    font-size: 28px;
+}
+#feedback-form-elements{
+    margin-top: 35vh;
+}
+#feedback-from{
+    text-align: center;
+    height: 30vh;
+    width: 100%;
+}
+#feedback-form-textarea{
+    color: white;
+    background-color: #0c0e24;
+}

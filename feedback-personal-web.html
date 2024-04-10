@@ -7,7 +7,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="styles/webpagestyles.css">
+        <link rel="stylesheet" href="styles/main-body.css">
         <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/footer.css">
         <style>
 
         </style>
@@ -16,9 +18,10 @@
         <div class="header">
             <div class="left-part">
                 <div class="personal-logo-container">
-                    <a href="./">
+                    <a href="/#intro-container">
                         <img class="personal-logo" src="Website-Images/bibekluitel-logo-white-transparent.png">
-                        <div class="tooltip">Home</div>
+                        <d class="tooltip">Home</d
+                            iv>
                      </a>
                  </div>
             </div>
@@ -29,19 +32,27 @@
                         <i class="fa fa-bars"></i>
                     </label>
                     <ul>
-                        <li><a class="active" href="feedback-personal-web.html" >Feedback</a></li>
+                        <li><a class="active" href="/" >Feedback</a></li>
                         <li>
                         <a href="#">Languages &#9660;</a>
                         <ul class="dropdown-list">
-                            <li><a href="html-personal-web.html">HTML</a></li>
-                            <li><a href="css-personal-web.html">CSS</a></li>
-                            <li><a href="javascript-personal-web.html">JavaScript</a></li>
+                            <li><a href="/#html">HTML</a></li>
+                            <li><a href="/#css">CSS</a></li>
+                            <li><a href="/#javascript">JavaScript</a></li>
                         </ul>
-                        <li><a href="about-me-personal-web.html">About Me</a></li>
+                        <li><a href="/#my-details">About Me</a></li>
                     </li>
                 </ul>
             </nav>
             </div>
         </div>
+        <div id="feedback-form-container">
+            <div id="feedback-form-elements">
+            <h2>Any Feedback will be greatly appreciated.</h2> <br>
+            <textarea id="feedback-form-textarea" rows="10" cols="50" placeholder="Enter your text here..."></textarea>
+                <br> <br>
+                <button id="send-button" type="submit">Send</button>
+        </div>
+    </div>
     </body>
 </html>
