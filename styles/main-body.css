@@ -41,7 +41,7 @@
     box-shadow: 5px 5px 10px #5881d2;
 }
 #my-image:hover{
-    box-shadow: -5px 5px 10px #5881d2;
+    box-shadow: -5px -5px 10px #5881d2;
 }
 .phone,
 .mail {
