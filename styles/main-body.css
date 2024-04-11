@@ -31,11 +31,17 @@
     -webkit-text-fill-color: transparent;
 }
 #my-image{
+    transition-duration: 0.3s;
     margin-top: 65px;
     height: 300px;
     width: 300px;
     border-radius: 50%;
     background-blend-mode:difference;
+    background-color: #0F172A;
+    box-shadow: 5px 5px 10px #1a2a49;
+}
+#my-image:hover{
+    box-shadow: 5px 5px 10px #5881d2;
 }
 .phone,
 .mail {
@@ -106,6 +112,11 @@ align-items: center;
     padding-top: 50px;
     display: flex;
     padding: 8.5vh 5vw;
+}
+@media(max-width: 300px){
+    #my-details{
+        transform: scale(0.8);
+    }
 }
 @media (max-width: 500px){
     #greetings{

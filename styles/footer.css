@@ -7,7 +7,7 @@
       padding-left: 10px;
       padding-right: 10px;
       color: #efefef;
-      margin-top: 40vh;
+      /* margin-top: 30vh; */
   }
 .footer div{
   text-align: center;
@@ -109,7 +109,8 @@ form button,
       padding: 1px;
       padding-left: 10px;
       padding-right: 10px;
- / }
+      margin-top: 120vh;
+  }
 }
 @media (max-width: 700px) {
   #logos{
@@ -119,12 +120,18 @@ form button,
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
     }
+    .footer{
+      margin-top: 15vh;
+    }
   }
 @media (min-width: 701px) and (max-width: 1299px) {
      
     .logos-container {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+    }
+    .footer{
+      margin-top: 10vh;
     }
   }
 @media (min-width: 1300px) {
