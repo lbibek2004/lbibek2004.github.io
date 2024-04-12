@@ -130,8 +130,10 @@ form button,
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
     }
+  }
+  @media (min-width: 701px) and (max-width: 900px){
     .footer{
-      margin-top: 100vh;
+      margin-top: 10vh;
     }
   }
 @media (min-width: 1300px) {
