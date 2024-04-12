@@ -38,10 +38,10 @@
     border-radius: 50%;
     background-blend-mode:difference;
     background-color: #0F172A;
-    box-shadow: 5px 5px 10px #5881d2;
+    box-shadow: 5px 5px 10px #213254;
 }
 #my-image:hover{
-    box-shadow: -5px -5px 10px #5881d2;
+    box-shadow: 10px 10px 20px #5881d2;
 }
 .phone,
 .mail {
