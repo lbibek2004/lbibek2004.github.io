@@ -10,9 +10,7 @@
         <link rel="stylesheet" href="styles/main-body.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
-        <style>
-
-        </style>
+        <script src="script/personal-web.js"></script>
     </head>
     <body>
         <div class="header">
@@ -49,9 +47,9 @@
         <div id="feedback-form-container">
             <div id="feedback-form-elements">
             <h2>Any Feedback will be greatly appreciated.</h2> <br>
-            <textarea id="feedback-form-textarea" rows="10" cols="40" placeholder="Enter your suggestions here..."></textarea>
+            <textarea name="user-message" id="user-message" rows="10" cols="40" placeholder="Enter your suggestions here..."></textarea>
                 <br> <br>
-                <button id="send-button" type="submit">Send</button>
+                <button onclick="confirmationPopup()" id="send-button" type="submit">Send</button>
         </div>
     </div>
     </body>

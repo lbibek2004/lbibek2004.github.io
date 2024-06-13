@@ -1,6 +1,19 @@
 function displayPopup() {
     alert("This function is unavailable. Please click on envelope icon under Connect With Me instead.");
 }
+function confirmationPopup(){
+    var confirmation = confirm("You will be redirected to your email client for further actions. Do you wish to proceed ?");
+    if (confirmation){
+        var text = document.getElementById("user-message").value;
+        var mailtoLink = "mailto:lbibek2004@gmail.com?subject=From Github: I want to connect&body=" + encodeURIComponent(text);
+        window.location.href = mailtoLink;
+    }
+    else{
+        alert("You've terminated the action.");
+    }
+}
+
+
 
 function scrollToHeading(headingId) {
     var headingElement = document.getElementById(headingId);
@@ -24,3 +37,11 @@ function scrollToHeading(headingId) {
         window.requestAnimationFrame(scrollToTimestamp);
     }
 }
+function getText() {
+    var text = document.getElementsByName("feedback-form-textarea")[0].value;
+    console.log(text); // Or do whatever you want with the text
+  }
+  function insertText() {
+    var text = document.getElementById("feedback-form-textarea").value;
+    this.href += encodeURIComponent(text);
+  }
