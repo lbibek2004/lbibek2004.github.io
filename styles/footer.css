@@ -1,14 +1,16 @@
-.footer{
-      padding: 2px;
-      justify-content: space-between;
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      background-color:#020416;
-      padding-left: 10px;
-      padding-right: 10px;
-      color: #efefef;
-      /* margin-top: 30vh; */
+.footer {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;               
+    align-items: start;      
+    background-color: #020416;
+    color: #efefef;
+    padding: 1rem 0.625rem;  
+    clear: both;
+    margin-top: 2rem;
   }
+  
 .footer div{
   text-align: center;
 }
@@ -120,9 +122,6 @@ form button,
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
     }
-    .footer{
-      margin-top: 40vh;
-    }
   }
 @media (min-width: 701px) and (max-width: 1299px) {
      
@@ -132,9 +131,6 @@ form button,
     }
   }
   @media (min-width: 701px) and (max-width: 900px){
-    .footer{
-      margin-top: 10vh;
-    }
   }
 @media (min-width: 1300px) {
      
