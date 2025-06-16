@@ -1,7 +1,8 @@
+ 
 .footer {
     display: grid;
     position: relative;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr; 
     gap: 1rem;               
     align-items: start;      
     background-color: #020416;
@@ -94,7 +95,27 @@ form button,
   transition-duration: 0.2s;
 }
 
-@media (min-width: 200px) and (max-width: 374px) {
+@media (max-width: 700px) { 
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "column1 column3"
+      "column2 column2"; 
+    padding: 1rem; 
+  }
+
+  .column-1 {
+    grid-area: column1;
+  }
+
+  .column-2 {
+    grid-area: column2;
+  }
+
+  .column-3 {
+    grid-area: column3;
+  }
+
   .my-contact{
     font-size: 10px;
     text-align: left;
@@ -103,26 +124,27 @@ form button,
   #logos{
     font-size: 30px;
     padding: 2px;
-}
+  }
   .logos-container{
     column-gap: 8px;
-}
-  .footer{
-      padding: 1px;
-      padding-left: 10px;
-      padding-right: 10px;
-      margin-top: 120vh;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); 
+  }
+  .footer {
+      margin-top: 2rem; 
+  }
+  form button,
+  #send-button {
+    width: 50%; 
   }
 }
+
+
 @media (min-width: 375px) and (max-width: 700px) {
-  #logos{
-    font-size: 30px;
-}
-    .logos-container {
+  .logos-container {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
     }
-  }
+}
 @media (min-width: 701px) and (max-width: 1299px) {
      
     .logos-container {
