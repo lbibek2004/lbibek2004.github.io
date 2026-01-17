@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="styles/main-body.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
-        <script src="script/personal-web.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+        <script src="script/personal-web.js" defer></script>
         <style>
 
         </style>
@@ -21,8 +22,7 @@
                 <div class="personal-logo-container">
                     <a href="/#intro-container">
                         <img class="personal-logo" src="Website-Images/bibekluitel-logo-white-transparent.png">
-                        <d class="tooltip">Home</d
-                            iv>
+                        <div class="tooltip">Home</div>
                      </a>
                  </div>
             </div>
@@ -50,9 +50,12 @@
         <div id="feedback-form-container">
             <div id="feedback-form-elements">
             <h2>Any Feedback will be greatly appreciated.</h2> <br>
-            <textarea name="user-message" id="user-message" rows="10" cols="40" placeholder="Enter your suggestions here..."></textarea>
-                <br> <br>
-                <button onclick="confirmationPopup()" id="send-button" type="submit">Send</button>
+            <form id="feedback-form">
+                <input id="feedback-name" name="name" type="text" placeholder="Your Name" required>
+                <input id="feedback-email" name="email" type="email" placeholder="Your Email" required>
+                <input name="message" id="user-message" class="message-input" type="text" placeholder="Enter your suggestions here..." required>
+                <button id="send-button" type="submit">Send</button>
+            </form>
         </div>
     </div>
     </body>

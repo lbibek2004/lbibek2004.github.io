@@ -162,3 +162,12 @@ align-items: center;
     background-color: #0c0e24;
     border-radius: 5px;
 }
+#feedback-form {
+    display: grid;
+    gap: 0.85rem;
+    width: min(520px, 90vw);
+    margin: 0 auto;
+}
+#feedback-form input {
+    text-align: left;
+}

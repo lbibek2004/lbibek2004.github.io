@@ -1,7 +1,4 @@
-function displayPopup() {
-    alert("This function is unavailable. Please click on envelope icon under Connect With Me instead.");
-}
-
+// Smooth scrolling to a specific heading
 function scrollToHeading(headingId) {
     var headingElement = document.getElementById(headingId);
     if (headingElement) {
@@ -25,23 +22,44 @@ function scrollToHeading(headingId) {
     }
 }
 
-// function getText() {
-//     var text = document.getElementsByName("feedback-form-textarea")[0].value;
-//     console.log(text); // Or do whatever you want with the text
-//   }
-//   function insertText() {
-//     var text = document.getElementById("feedback-form-textarea").value;
-//     this.href += encodeURIComponent(text);
-//   }
+// EmailJS integration for form submission
+(function () {
+  emailjs.init("ShVxVoojS6XK09raH");
+})();
 
-function confirmationPopup(){
-    var confirmation = confirm("You will be redirected to your email client for further actions. Do you wish to proceed ?");
-    if (confirmation){
-        var text = document.getElementById("user-message").value;
-        var mailtoLink = "mailto:lbibek2004@gmail.com?subject=From Github: I want to connect&body=" + encodeURIComponent(text);
-        window.location.href = mailtoLink;
+function attachEmailForm(formId) {
+  var form = document.getElementById(formId);
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var submitBtn = form.querySelector("button[type='submit']");
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
     }
-    else{
-        alert("You've terminated the action.");
-    }
+
+    emailjs
+      .sendForm("service_lbibek2004gmail", "template_x9dl7y7", form)
+      .then(function () {
+        alert("Email sent!");
+        form.reset();
+      })
+      .catch(function (error) {
+        alert("Failed: " + error.text);
+      })
+      .finally(function () {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Send";
+        }
+      });
+  });
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  attachEmailForm("contact-form");
+  attachEmailForm("feedback-form");
+});

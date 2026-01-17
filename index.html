@@ -9,8 +9,9 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/main-body.css">
-        <script src="script/personal-web.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+        <script src="script/personal-web.js" defer></script>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>
         Bibek Luitel
@@ -126,9 +127,11 @@
         </div>
             <div class="column-2">
                 <h3>Send Me a Message</h3>
-                <form>
-                    <input id="user-message" type="text" placeholder="Your Message Here">
-                    <button type="submit" onclick="confirmationPopup()">Send</button>
+                <form id="contact-form">
+                    <input id="user-name" name="name" type="text" placeholder="Your Name" required>
+                    <input id="user-email" name="email" type="email" placeholder="Your Email" required>
+                    <input id="user-message" class="message-input" name="message" type="text" placeholder="Your Message Here" required>
+                    <button id="send-button" type="submit">Send</button>
                 </form>
             </div>
             <div class="column-3">
