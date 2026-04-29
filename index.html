@@ -233,10 +233,10 @@
                 content: '';
                 position: absolute;
                 top: 0; left: 0;
-                width: 0; height: 3px;
-                background: linear-gradient(to right, var(--accent), var(--accent-violet));
-                border-radius: 0 0 3px 3px;
-                transition: width 0.4s ease;
+                width: 3px; height: 0;
+                background: linear-gradient(to bottom, var(--accent), var(--accent-violet));
+                border-radius: 0 3px 3px 0;
+                transition: height 0.4s ease;
             }
 
             .project-card:hover {
@@ -245,7 +245,7 @@
                 box-shadow: 0 28px 80px rgba(0,0,0,0.45), 0 0 0 1px rgba(0,200,255,0.08);
             }
 
-            .project-card:hover::before { width: 100%; }
+            .project-card:hover::before { height: 100%; }
 
             .project-card-glow {
                 position: absolute;
@@ -391,8 +391,6 @@
     </head>
     <body>
         <div class="noise-overlay"></div>
-        <div class="cursor-dot"></div>
-        <div class="cursor-ring"></div>
 
         <header class="header">
             <div class="left-part">
@@ -424,9 +422,6 @@
             <!-- HERO -->
             <article id="intro-container">
                 <div class="hero-bg">
-                    <div class="orb orb-1"></div>
-                    <div class="orb orb-2"></div>
-                    <div class="orb orb-3"></div>
                     <div class="hero-grid"></div>
                 </div>
                 <div class="hero-content">
@@ -437,8 +432,9 @@
                     <h1 id="my-name">Bibek<br>Luitel</h1>
                     <div class="hero-meta">
                         <p class="hero-tagline">
-                            A <em>Data Science</em> student — building full-stack<br>
-                            web experiences and intelligent data pipelines.
+                            A <em>Data Science</em> student at SLU — I write Python for the data<br>
+                            and React for the interface, and keep finding interesting problems<br>
+                            living somewhere between the two.
                         </p>
                         <div class="hero-cta">
                             <a href="#" onclick="scrollToHeading('projects'); return false;" class="btn-primary">
@@ -448,12 +444,12 @@
                             <a href="#" onclick="scrollToHeading('my-details'); return false;" class="btn-ghost">
                                 <span>About Me</span>
                             </a>
+                            <a href="Assets/Resume/Resume_Revised_Apr28.pdf" download class="btn-ghost">
+                                <i class="fa-solid fa-file-arrow-down"></i>
+                                <span>Resume</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="scroll-indicator" onclick="scrollToHeading('my-details')">
-                    <span class="scroll-text">scroll</span>
-                    <div class="scroll-line-wrap"><div class="scroll-line"></div></div>
                 </div>
             </article>
 
@@ -466,7 +462,6 @@
                                 <div class="image-wrapper">
                                     <img id="my-image" src="./Website-Images/tranparent-image.png" alt="Bibek Luitel">
                                 </div>
-                                <div class="image-deco-ring"></div>
                                 <div class="image-deco-sq"></div>
                             </div>
                         </div>
@@ -483,11 +478,13 @@
                                 </a>
                             </div>
                             <p class="about-desc">
-                                Data Science major with a full command of the web — from pixel-perfect
-                                frontends to robust backend APIs and database design. I build things end-to-end:
-                                clean UIs in React and TypeScript, scalable APIs in ASP.NET, and data pipelines
-                                in Python. Currently exploring machine learning and computer vision at the
-                                intersection of software and science.
+                                Data Science major at Southeastern, with a habit of picking up whatever
+                                the project needs. Usually ends up being React and TypeScript for UIs,
+                                ASP.NET for APIs, and Python for anything involving data. I build
+                                things end-to-end — not because it's always the efficient choice,
+                                but because I want to understand the whole thing. Right now I'm deep
+                                in computer vision and on-device ML, which turned out to be a much
+                                larger rabbit hole than expected.
                             </p>
                         </div>
                     </div>
@@ -510,35 +507,35 @@
                             <i class="fa-brands fa-python"></i>
                         </div>
                         <div class="expertise-card-title">Python</div>
-                        <div class="expertise-card-desc">Data pipelines, ML workflows, CLI tooling, and statistical analysis with a clean, modular approach.</div>
+                        <div class="expertise-card-desc">Where most of my actual work happens. ETL pipelines, ML experiments, the occasional one-off script that I only meant to run once.</div>
                     </div>
                     <div class="expertise-card skill-card">
                         <div class="expertise-icon-wrap">
                             <i class="fa-brands fa-react"></i>
                         </div>
                         <div class="expertise-card-title">React</div>
-                        <div class="expertise-card-desc">Component-driven UIs with hooks, context, and TypeScript — responsive, accessible, and fast.</div>
+                        <div class="expertise-card-desc">TypeScript, hooks, context. I stopped fighting the re-render cycle a while back and started working with it instead.</div>
                     </div>
                     <div class="expertise-card skill-card">
                         <div class="expertise-icon-wrap">
                             <i class="fa-brands fa-js"></i>
                         </div>
                         <div class="expertise-card-title">JavaScript &amp; TypeScript</div>
-                        <div class="expertise-card-desc">ES6+ fundamentals, async patterns, and type-safe code across the full stack.</div>
+                        <div class="expertise-card-desc">I defaulted to plain JavaScript until TypeScript made me feel bad about it. Now I use TypeScript and things make more sense.</div>
                     </div>
                     <div class="expertise-card skill-card">
                         <div class="expertise-icon-wrap">
                             <i class="fa-solid fa-server"></i>
                         </div>
                         <div class="expertise-card-title">ASP.NET / C#</div>
-                        <div class="expertise-card-desc">RESTful API design, backend architecture, and data layer integration with SQL and MySQL.</div>
+                        <div class="expertise-card-desc">Where my APIs live. C# makes you be explicit about types in a way I've come to appreciate, even when it adds an extra line or two.</div>
                     </div>
                     <div class="expertise-card skill-card">
                         <div class="expertise-icon-wrap">
                             <i class="fa-solid fa-database"></i>
                         </div>
                         <div class="expertise-card-title">Full-Stack &amp; APIs</div>
-                        <div class="expertise-card-desc">End-to-end ownership — frontend, backend, custom REST APIs, and deployment via GitHub Pages &amp; beyond.</div>
+                        <div class="expertise-card-desc">Connecting all of the above. The part where frontend and backend disagree about who's responsible for the bug.</div>
                     </div>
                 </div>
 
@@ -581,15 +578,14 @@
 
                     <!-- Portfolio Website -->
                     <div class="project-card skill-card">
-                        <div class="project-card-glow"></div>
                         <div class="project-card-inner">
                             <div class="project-num font-mono">01</div>
                             <div class="project-title">Personal Portfolio</div>
                             <div class="project-subtitle">Web Development</div>
                             <p class="project-desc">
-                                A fully custom, responsive portfolio site built from scratch with pure HTML, CSS,
-                                and JavaScript — no frameworks. Features an animated hero, custom cursor, scroll
-                                reveal effects, contact form via EmailJS, and GitHub Pages deployment.
+                                Built from scratch — pure HTML, CSS, and JavaScript, no framework.
+                                Partly to have full control over the animations, partly to prove it
+                                was possible, mostly stubbornness. You're looking at it.
                             </p>
                             <div class="project-tags">
                                 <span class="project-tag">HTML5</span>
@@ -612,15 +608,16 @@
 
                     <!-- WeSchedule -->
                     <div class="project-card skill-card">
-                        <div class="project-card-glow"></div>
                         <div class="project-card-inner">
                             <div class="project-num font-mono">02</div>
                             <div class="project-title">WeSchedule</div>
                             <div class="project-subtitle">Full-Stack Web App</div>
                             <p class="project-desc">
-                                A mobile-friendly group calendar platform where users can create calendars by
-                                group or type, share them with custom permission levels (view vs. request edits),
-                                and collaborate on scheduling — all with a clean, modern UI.
+                                A group calendar where you actually control who can edit what. Built
+                                because shared scheduling tools always feel like they were designed for
+                                someone else's workflow. Ended up implementing a full permissions
+                                system, which taught me more about auth than any tutorial had.
+                                <!-- ASSUMPTION: motivation — adjust if the origin story is different -->
                             </p>
                             <div class="project-tags">
                                 <span class="project-tag">React</span>
@@ -640,16 +637,16 @@
 
                     <!-- Flight Crash Analysis -->
                     <div class="project-card skill-card">
-                        <div class="project-card-glow"></div>
                         <div class="project-card-inner">
                             <div class="project-num font-mono">03</div>
                             <div class="project-title">Flight Crash Analysis</div>
                             <div class="project-subtitle">Data Science / Python CLI</div>
                             <p class="project-desc">
-                                A modular Python CLI to analyze fatal aviation crash datasets (2019–2025) by
-                                crash type, fatalities, and location. Includes an automated ETL pipeline,
-                                statistical summaries, box plots, histograms, correlation charts, and
-                                conditional probability workflows.
+                                A Python CLI that breaks down fatal aviation crash data from 2019–2025
+                                — ETL pipeline, statistical summaries, charts, conditional probabilities.
+                                Started as a class project. The patterns in the actual data turned out
+                                to be more interesting than I expected.
+                                <!-- ASSUMPTION: class project context — adjust if built independently -->
                             </p>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
@@ -668,21 +665,18 @@
 
                     <!-- Project A+ -->
                     <div class="project-card skill-card">
-                        <div class="project-card-glow"></div>
                         <div class="project-card-inner">
                             <div class="project-num font-mono">04</div>
                             <div class="project-title">Project A+</div>
                             <div class="project-subtitle">Mobile App · Computer Vision · On-Device AI</div>
                             <p class="project-desc">
-                                A cross-platform notes scanning study tool built with React Native (Expo) and
-                                a Flask REST backend. An OpenCV preprocessing pipeline (Canny edge detection,
-                                four-point perspective transform, Sauvola adaptive thresholding) normalizes
-                                scanned documents for improved OCR accuracy. A network-aware AI routing layer
-                                dynamically switches between on-device inference (Gemma 3 4B via llama.rn /
-                                GGML + ML Kit OCR) and cloud APIs (Google Cloud Vision + Gemini 2.0 Flash)
-                                based on connectivity — with user preference persisted via MMKV. Supports
-                                offline Q&amp;A, quiz generation, and flashcard generation with zero network
-                                dependency.
+                                Started as a hackathon idea: scan your notes on your phone and ask it
+                                questions. Grew into an OpenCV preprocessing pipeline (Canny edge
+                                detection, Sauvola thresholding, perspective correction), on-device AI
+                                for offline use (Gemma 3 4B via GGML), and a routing layer that
+                                falls back to Gemini 2.0 Flash when there's a connection. Generates
+                                Q&amp;A, quizzes, and flashcards. More moving parts than planned —
+                                but it works without Wi-Fi, which was the whole point.
                             </p>
                             <div class="project-tags">
                                 <span class="project-tag">React Native</span>
@@ -748,24 +742,6 @@
         </footer>
 
         <script>
-        // Custom cursor
-        const dot = document.querySelector('.cursor-dot');
-        const ring = document.querySelector('.cursor-ring');
-        let mx = 0, my = 0, rx = 0, ry = 0;
-        document.addEventListener('mousemove', e => {
-            mx = e.clientX; my = e.clientY;
-            dot.style.left = mx + 'px'; dot.style.top = my + 'px';
-        });
-        (function tick() {
-            rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
-            ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-            requestAnimationFrame(tick);
-        })();
-        document.querySelectorAll('a, button').forEach(el => {
-            el.addEventListener('mouseenter', () => { ring.classList.add('hover'); dot.classList.add('hover'); });
-            el.addEventListener('mouseleave', () => { ring.classList.remove('hover'); dot.classList.remove('hover'); });
-        });
-
         // Scroll reveal
         const obs = new IntersectionObserver(entries =>
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
