@@ -227,6 +227,7 @@
 
             .project-card:nth-child(2).visible { animation-delay: 0.12s; }
             .project-card:nth-child(3).visible { animation-delay: 0.22s; }
+            .project-card:nth-child(4).visible { animation-delay: 0.32s; }
 
             .project-card::before {
                 content: '';
@@ -659,6 +660,47 @@
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/lbibek2004/CMPS3400" target="_blank" class="project-link primary">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project A+ -->
+                    <div class="project-card skill-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-card-inner">
+                            <div class="project-num font-mono">04</div>
+                            <div class="project-title">Project A+</div>
+                            <div class="project-subtitle">Mobile App · Computer Vision · On-Device AI</div>
+                            <p class="project-desc">
+                                A cross-platform notes scanning study tool built with React Native (Expo) and
+                                a Flask REST backend. An OpenCV preprocessing pipeline (Canny edge detection,
+                                four-point perspective transform, Sauvola adaptive thresholding) normalizes
+                                scanned documents for improved OCR accuracy. A network-aware AI routing layer
+                                dynamically switches between on-device inference (Gemma 3 4B via llama.rn /
+                                GGML + ML Kit OCR) and cloud APIs (Google Cloud Vision + Gemini 2.0 Flash)
+                                based on connectivity — with user preference persisted via MMKV. Supports
+                                offline Q&amp;A, quiz generation, and flashcard generation with zero network
+                                dependency.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">React Native</span>
+                                <span class="project-tag">Expo</span>
+                                <span class="project-tag">Flask</span>
+                                <span class="project-tag">OpenCV</span>
+                                <span class="project-tag">Gemma 3</span>
+                                <span class="project-tag">Gemini 2.0</span>
+                                <span class="project-tag">ML Kit</span>
+                                <span class="project-tag">GGML</span>
+                                <span class="project-tag">MMKV</span>
+                                <span class="project-tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://devpost.com/software/project-a-0dlb7v" target="_blank" class="project-link primary">
+                                    <i class="fa-solid fa-trophy"></i> DevPost
+                                </a>
+                                <a href="https://github.com/lbibek2004/Project-A-" target="_blank" class="project-link ghost">
                                     <i class="fa-brands fa-github"></i> GitHub
                                 </a>
                             </div>
