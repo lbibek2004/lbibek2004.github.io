@@ -228,6 +228,7 @@
             .project-card:nth-child(2).visible { animation-delay: 0.12s; }
             .project-card:nth-child(3).visible { animation-delay: 0.22s; }
             .project-card:nth-child(4).visible { animation-delay: 0.32s; }
+            .project-card:nth-child(5).visible { animation-delay: 0.42s; }
 
             .project-card::before {
                 content: '';
@@ -696,6 +697,42 @@
                                 </a>
                                 <a href="https://github.com/lbibek2004/Project-A-" target="_blank" class="project-link ghost">
                                     <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ECG Biometric Auth -->
+                    <div class="project-card skill-card">
+                        <div class="project-card-inner">
+                            <div class="project-num font-mono">05</div>
+                            <div class="project-title">ECG Biometric Auth</div>
+                            <div class="project-subtitle">Deep Learning · Biometrics · Signal Processing</div>
+                            <p class="project-desc">
+                                Turns out your heart's electrical signature is unique enough to use as
+                                a password — and harder to steal than a fingerprint. Built a 1D ResNet
+                                encoder that compresses individual heartbeats into 128-dimensional
+                                embeddings using Triplet Loss, so same-person signals cluster and
+                                impostors don't. Trained on 21k PTB-XL ECG recordings. Reached
+                                0.972 AUC and 9.33% EER — good enough to be interesting, imperfect
+                                enough to be honest about. Open source under GPLv3.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">PyTorch</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">1D ResNet</span>
+                                <span class="project-tag">Triplet Loss</span>
+                                <span class="project-tag">SciPy</span>
+                                <span class="project-tag">scikit-learn</span>
+                                <span class="project-tag">Kaggle T4 GPU</span>
+                                <span class="project-tag">GPLv3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/lbibek2004/-ECG-Based-Biometric-Identity-Authentication" target="_blank" class="project-link primary">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="https://www.kaggle.com/code/lbibek2004/ecg-based-biometric-identity-authentication" target="_blank" class="project-link ghost">
+                                    <i class="fa-solid fa-book-open"></i> Notebook
                                 </a>
                             </div>
                         </div>
